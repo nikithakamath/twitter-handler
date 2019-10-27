@@ -11,6 +11,11 @@ let validator = require('../../helpers/validator');
  * @class FeedController
  */
 class FeedController {
+    /**
+     * 
+     * @param {Object} request 
+     * @param {Object} response 
+     */
     getFeed(request, response) {
         let validationErr = validationResult(request);
         if (!validationErr.isEmpty()) {
@@ -33,6 +38,11 @@ class FeedController {
                 });
         }
     }
+    /**
+     * 
+     * @param {Object} request 
+     * @param {Object} response 
+     */
     loadTweets(request, response) {
         let validationErr = validationResult(request);
         if (!validationErr.isEmpty()) {
@@ -55,6 +65,11 @@ class FeedController {
                 });
         }
     }
+    /**
+     * 
+     * @param {Object} request 
+     * @param {Object} response 
+     */
     searchTweets(request, response) {
         let validationErr = validationResult(request);
         if (!validationErr.isEmpty()) {
@@ -77,6 +92,11 @@ class FeedController {
                 });
         }
     }
+    /**
+     * 
+     * @param {Object} request 
+     * @param {Object} response 
+     */
     filterTweets(request, response) {
         let validationErr = validationResult(request);
         if (!validationErr.isEmpty()) {
@@ -99,6 +119,11 @@ class FeedController {
                 });
         }
     }
+    /**
+     * 
+     * @param {Object} request 
+     * @param {Object} response 
+     */
     getTweetsWithLink(request, response) {
         let validationErr = validationResult(request);
         if (!validationErr.isEmpty()) {

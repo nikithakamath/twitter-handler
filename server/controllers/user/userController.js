@@ -9,6 +9,12 @@ const userService = require('../../services/user/userService').userServiceObj;
  * @class UserController
  */
 class UserController {
+    /**
+     * 
+     * @param {Object} requestData 
+     * @param {String} uid 
+     * @returns {Promise}
+     */
     login(requestData, uid) {
         return new Promise((resolve, reject) => {
             userService.handleLogin(requestData, uid)

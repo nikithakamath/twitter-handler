@@ -12,6 +12,11 @@ let validator = require('../../helpers/validator');
  * @class FeedController
  */
 class AuthController {
+    /**
+     * 
+     * @param {Object} request 
+     * @param {Object} response 
+     */
     login(request, response) {
         let validationErr = validationResult(request);
         if (!validationErr.isEmpty()) {

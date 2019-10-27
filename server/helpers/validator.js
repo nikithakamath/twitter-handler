@@ -6,7 +6,9 @@ module.exports = {
         check('name').not().isEmpty(),
         check('username').not().isEmpty(),
         check('screen_name').not().isEmpty(),
-        check('profile_image_url_https').not().isEmpty()
+        check('profile_image_url_https').not().isEmpty(),
+        check('token').not().isEmpty(),
+        check('token_secret').not().isEmpty(),
     ],
     getFeedValidation: [
         check('user_id').isInt()
