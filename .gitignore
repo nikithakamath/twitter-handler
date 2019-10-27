@@ -2,3 +2,4 @@ server/.env
 server/.vscode/launch.json
 server/node_modules/.bin/gcs-upload.cmd
 server/node_modules/
+server/services/firebase/key.json

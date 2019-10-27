@@ -29,9 +29,8 @@ mongoose.connect(process.env.MONGODB_URL, {useUnifiedTopology: true, useNewUrlPa
 mongoose.connection.on('connected', () => {
   console.log('MongoDB connection successful');
   // Listen to port
-  if(process.env.NODE_ENV === 'development') {
-    app.listen(port, () => console.log(`App is listening on port ${port}`));
-  }
+  app.listen(port, () => console.log(`App is listening on port ${port}`));
+  
 }).on('error', (error) => {
   console.log('MongoDB connection failed due to the error: ', error);
 }).on('disconnected', () => {
