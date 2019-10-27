@@ -3,8 +3,6 @@
 const admin = require('firebase-admin');
 
 // Firebase Project configurations
-const serviceAccount =
-    require('./key.json');
 
 const firebaseApp = admin.initializeApp({
   credential: admin.credential.cert({
