@@ -19,7 +19,7 @@ Please follow the instructions to get started with this application
 * Please follow the steps mentioned here to set up Firebase Admin SDK : https://firebase.google.com/docs/admin/setup
 * Add the Firebase JSON file key value pairs and database URL to *.env* file
 
-## MySQL set up
+## MongoDB set up
 Add MongoDB connection string URL to *.env* file
 
 ## Local deployment
