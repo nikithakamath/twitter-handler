@@ -1,2 +1,3 @@
 node_modules/
 services/firebase/key.json
+.env
